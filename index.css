@@ -1,0 +1,48 @@
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+.my-color {
+  color: #6c63ff;
+}
+.my-bg-color {
+  background-color: #6c63ff;
+}
+
+.black-color {
+  color: black;
+}
+
+.img-reduce {
+  width: 40%;
+}
+
+.my-bg-white {
+  background-color: #adb5bd;
+}
+
+.my-text-color {
+  color: #212529;
+}
+
+.submit {
+  margin-left: 20px;
+}
+
+textarea {
+  width: 500px;
+}
+
+#copy {
+  margin-left: 100px;
+}
+
+.px {
+  width: 35px;
+}
+
+a {
+  text-decoration: none;
+}

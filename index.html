@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Fake Data Paradise</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Fake Data Paradise</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#generate_data" class="nav-link">Generate Data</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-1 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+              Generate <span class="my-color">Fake</span> CSV
+              <span class="my-color">Data</span>
+            </h1>
+            <p class="lead">
+              Ever needed custom test data generated automatically instead of
+              typing it out. Just click some checkboxes and get yourself data
+              ranging from Person to a Vehicle either copy it or save it.
+            </p>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="./img/showcase.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Form -->
+    <section id="generate_data"
+      class="
+        my-bg-color
+        text-light
+        p-5 p-lg-5
+        pt-lg-5
+        text-sm-start text-center
+      "
+    >
+      <div class="container black-color">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <!-- Form -->
+          <div>
+            <!-- Row input -->
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="rows" class="col-form-label"><h2>Rows ⁞</h2></label>
+              </div>
+              <div class="col-auto">
+                <input
+                  type="number"
+                  id="row"
+                  class="form-control"
+                  aria-describedby="desc"
+                />
+              </div>
+              <div class="col-auto">
+                <span id="desc" class="form-text black-color">
+                  Must be a whole number.
+                </span>
+              </div>
+            </div>
+            <br />
+            <!-- Checkboxes -->
+            <div>
+              <h4>Person 🧍</h4>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="name"
+                  id="data0"
+                  value="findName"
+                />
+                <label class="form-check-label" for="data0">Full Name</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="name"
+                  id="data1"
+                  value="firstName"
+                />
+                <label class="form-check-label" for="data1">First Name</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="name"
+                  id="data2"
+                  value="lastName"
+                />
+                <label class="form-check-label" for="data2">Last Name</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="name"
+                  id="data3"
+                  value="jobTitle"
+                />
+                <label class="form-check-label" for="data3">Job Title</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="name"
+                  id="data4"
+                  value="gender"
+                />
+                <label class="form-check-label" for="data4">Gender</label>
+              </div>
+            </div>
+            <br />
+            <div>
+              <h4>Address 📦</h4>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="address"
+                  id="data5"
+                  value="zipCode"
+                />
+                <label class="form-check-label" for="data5">Zip Code</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="address"
+                  id="data6"
+                  value="city"
+                />
+                <label class="form-check-label" for="data6">City</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="address"
+                  id="data7"
+                  value="streetName"
+                />
+                <label class="form-check-label" for="data7">Street Name</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="address"
+                  id="data8"
+                  value="streetAddress"
+                />
+                <label class="form-check-label" for="data8"
+                  >Street Address</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="address"
+                  id="data9"
+                  value="country"
+                />
+                <label class="form-check-label" for="data9">Country</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="address"
+                  id="data10"
+                  value="countryCode"
+                />
+                <label class="form-check-label" for="data10"
+                  >Country Code</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="address"
+                  id="data11"
+                  value="state"
+                />
+                <label class="form-check-label" for="data11">State</label>
+              </div>
+            </div>
+            <br />
+            <div>
+              <h4>Date 📅</h4>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="date"
+                  id="data12"
+                  value="past"
+                />
+                <label class="form-check-label" for="data12">Past Date</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="date"
+                  id="data13"
+                  value="future"
+                />
+                <label class="form-check-label" for="data13">Future Date</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="date"
+                  id="data14"
+                  value="month"
+                />
+                <label class="form-check-label" for="data14">Month</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="date"
+                  id="data15"
+                  value="weekday"
+                />
+                <label class="form-check-label" for="data15">Weekday</label>
+              </div>
+            </div>
+            <br />
+            <div>
+              <h4>Finance 📈</h4>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="finance"
+                  id="data16"
+                  value="account"
+                />
+                <label class="form-check-label" for="data16">Account</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="finance"
+                  id="data17"
+                  value="accountName"
+                />
+                <label class="form-check-label" for="data17"
+                  >Account Name</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="finance"
+                  id="data18"
+                  value="amount"
+                />
+                <label class="form-check-label" for="data18">Amount</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="finance"
+                  id="data19"
+                  value="currencyName"
+                />
+                <label class="form-check-label" for="data19"
+                  >Currency Name</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="finance"
+                  id="data20"
+                  value="creditCardNumber"
+                />
+                <label class="form-check-label" for="data20"
+                  >Credit Card Number</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="finance"
+                  id="data21"
+                  value="creditCardCVV"
+                />
+                <label class="form-check-label" for="data21"
+                  >Credit Card CVV</label
+                >
+              </div>
+            </div>
+            <br />
+            <div>
+              <h4>Internet 📶</h4>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="internet"
+                  id="data22"
+                  value="email"
+                />
+                <label class="form-check-label" for="data22">Email ID</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="internet"
+                  id="data23"
+                  value="userName"
+                />
+                <label class="form-check-label" for="data23">User Name</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="internet"
+                  id="data24"
+                  value="url"
+                />
+                <label class="form-check-label" for="data24">URL</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="internet"
+                  id="data25"
+                  value="password"
+                />
+                <label class="form-check-label" for="data25">Password</label>
+              </div>
+            </div>
+            <br />
+            <div>
+              <h4>Phone 📞</h4>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="phone"
+                  id="data26"
+                  value="phoneNumber"
+                />
+                <label class="form-check-label" for="data26"
+                  >Phone Number</label
+                >
+              </div>
+            </div>
+            <br />
+            <div>
+              <h4>Vehicle 🚗</h4>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="vehicle"
+                  id="data27"
+                  value="vehicle"
+                />
+                <label class="form-check-label" for="data27">Vehicle</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="vehicle"
+                  id="data28"
+                  value="manufacturer"
+                />
+                <label class="form-check-label" for="data28"
+                  >Manufacturer</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="vehicle"
+                  id="data29"
+                  value="model"
+                />
+                <label class="form-check-label" for="data29">Model</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="vehicle"
+                  id="data30"
+                  value="type"
+                />
+                <label class="form-check-label" for="data30">Type</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="vehicle"
+                  id="data31"
+                  value="color"
+                />
+                <label class="form-check-label" for="data31">Color</label>
+              </div>
+              <br />
+              <br />
+              <!-- Checkboxes end -->
+              <div class="pt-lg-3 submit">
+                <button type="button" id="submit" class="btn btn-dark">
+                  Apply Config ✅
+                </button>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <button type="button" id="clear" class="btn btn-dark">
+                  Clear Config 🔄️
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="mb-lg-3">Sample</h2>
+            <textarea
+              class="d-none d-sm-block"
+              name="Sample"
+              id="sample"
+              cols="20"
+              rows="22"
+              style="white-space: pre"
+            ></textarea>
+            <div class="pt-lg-3">
+              <button type="button" id="copy" class="btn btn-dark">
+                Copy text 📋
+              </button>
+              &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+              <button type="button" id="btnSave" class="btn btn-dark">
+                Save Config ⬇️
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about"
+      class="
+        my-bg-white
+        text-light
+        p-5 p-lg-5
+        pt-lg-5
+        text-center text-sm-start
+      "
+    >
+      <div class="container my-text-color">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <!-- img -->
+          <img
+            class="img-fluid img-reduce d-none d-sm-block"
+            src="./img/about.svg"
+            alt=""
+          />
+          <div class="my-text-color ms-lg-5">
+            <h1>About</h1>
+            <p>
+              The webpage was built for the INT 219 Front End Web Developer course taught by Dr. Manjot Kaur Mam. It generates fake csv data
+              using faker.js javascript module. It is simple, modern looking and
+              easy to use.
+            </p>
+            <h4>How I built it</h4>
+            <p>
+              I used HTML, CSS, Bootstrap and JavaScript for frontend. For
+              generating data I used faker.js browser version.
+            </p>
+            <h4>Resources Used</h4>
+            <p>
+              faker.js - for generating fake data
+              <br />
+              undraw.co - for beautiful images
+            </p>
+            <h4>What's next</h4>
+            <p>
+              Feature to convert CSV file to Excel, JSON, SQL and other known
+              file types.
+            </p>
+            <h4>GitHub</h4>
+            <p>
+              <a href="https://github.com/dhruvjain896/fakeDataParadise" target="_blank"
+                ><button
+                  type="button"
+                  id="code"
+                  class="btn btn-success"
+                  style="color: black"
+                >
+                  Code
+                  <img style="width: 20px" src="./img/caret-down-outline.svg" />
+                </button>
+              </a>
+              &ensp;
+              <a href="https://github.com/dhruvjain896" target="_blank"
+                ><img class="px" src="./img/logo-github.svg" alt=""
+              /></a>
+            </p>
+            <h4>Connect with me</h4>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/dhruvjain896/"
+                target="_blank"
+                ><img class="px" src="./img/logo-linkedin.svg" alt=""
+              /></a>
+              &ensp;&ensp;
+              <a href="https://twitter.com/dhruvjain896" target="_blank"
+                ><img class="px" src="./img/logo-twitter.svg" alt=""
+              /></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="my-bg-white text-light p-4 pt-lg-5 text-center text-sm-start"
+    >
+      <hr style="color: black" />
+      <div style="color: black">
+        © 2022 Fake Data Paradise Inc. All rights reserved.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="faker.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
